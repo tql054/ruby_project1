@@ -1,4 +1,4 @@
-class Person
+class Sinhvien
     attr_accessor :hoten, :masv, :diemToan, :diemLy, :diemHoa, :diemTB                   
     def initialize(hoten, masv)
       @hoten = hoten
@@ -20,7 +20,7 @@ class Person
     end
   end
   
-  p = Person.new("Le Quoc Tuan", 1911505310158)
+  p = Sinhvien.new("Le Quoc Tuan", 1911505310158)
   puts "Nhap diem toan"
   diemToan = gets.to_f
   puts "Nhap diem ly"
