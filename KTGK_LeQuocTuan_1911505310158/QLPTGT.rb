@@ -20,25 +20,26 @@ class QLPTGT
         puts "Mau xe: "
         mauxe_158 = gets.to_s
         
-        puts "Chon loai phuong tien (oto/xe may/xe tai): "
+        puts "Chon loai phuong tien (oto/xemay/xetai): "
         option_158 = gets.chomp
+        puts "Nhap thong tin cho #{option_158} moi"
         case option_158
             when "oto"
                 ptMoi = Oto.new(id_158, hangsx_158, namsx_158, dongxe_158, giaban_158, bienso_158, mauxe_158)
                 # số chỗ ngồi, kiểu động cơ, nhiên liệu (xăng/dầu), số túi khí, ngày đăng kiểm.
                 puts "So cho ngoi: "
-                ptMoi.sochongoi = gets.to_i
+                ptMoi.sochongoi = gets.to_s
                 puts "Kieu dong co: "
-                ptMoi.kieudongco = gets.to_i
+                ptMoi.kieudongco = gets.to_s
                 puts "Nhien lieu: "
-                ptMoi.nhienlieu = gets.to_i
+                ptMoi.nhienlieu = gets.to_s
                 puts "So tui khi: "
-                ptMoi.sotuikhi = gets.to_i
+                ptMoi.sotuikhi = gets.to_s
                 puts "Ngay dang kiem: "
-                ptMoi.ngaydangkiem = gets.to_i
+                ptMoi.ngaydangkiem = gets.to_s
                 puts "Them thanh cong!"
                 return ptMoi
-            when "Ky su"
+            when "xemay"
                 ptMoi = Xemay.new(id_158, hangsx_158, namsx_158, dongxe_158, giaban_158, bienso_158, mauxe_158)
                 puts "Cong suat: "
                 ptMoi.congsuat = gets.to_s
