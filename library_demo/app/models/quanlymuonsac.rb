@@ -1,0 +1,2 @@
+class Quanlymuonsac < ApplicationRecord
+end

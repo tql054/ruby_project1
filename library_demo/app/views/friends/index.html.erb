@@ -1,0 +1,49 @@
+
+<div class ="container">
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>TT</th>
+        <th>STT</th>
+        <th>Mã HS</th>
+        <th>Họ và tên</th>
+        <th>Lớp</th>
+        <th>Mã sách</th>
+        <th>Tên sách</th>
+        <th>Tên tác giả</th>
+        <th>Tủ sách</th>
+        <th>Ngày mượn</th>
+        <th>Ngày trả</th>
+        <th>Số ngày</th>
+        <th>Ghi chú</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%  @quanlymuonsach.all.each do |muonsach| %>
+        <tr>
+          <td>
+            
+          </td>
+          <td>
+            <%= muonsach.STT%>
+          </td>
+          <td><%= muonsach.mahs %></td>
+          <td><%= muonsach.hoten %></td>
+          <td><%= muonsach.lop %></td>
+          <td><%= muonsach.tensach %></td>
+          <td><%= muonsach.tacgia %></td>
+          <td><%= muonsach.tusach %></td>
+          <td><%= muonsach.sobm %></td>
+          <td><%= muonsach.ngaymuon %></td>
+          <td><%= muonsach.ngaytra %></td>
+          <td><%= muonsach.songay %></td>
+          <td>
+            
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  </div>
